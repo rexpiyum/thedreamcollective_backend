@@ -21,7 +21,7 @@ var droneSchema = new Schema({
 
   createdBy: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 
-  reactions: [{type: String}],
+  reactions: [{type: Object}],
 
   isFlagged: {
     type: Boolean,
